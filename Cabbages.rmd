@@ -22,7 +22,7 @@ veggy <- cabbages
 ### Is there a difference in average VitC between c39 and c52 cultivation methods?  
 
 
-$H_0$: There is no difference in the average VitC between both. of the cultivation methods
+$H_0$: There is no difference in the average VitC between both. of the cultivation methods. 
 $H_A$: There is a difference in the average VitC betweenboth of the cultivation methods
 
 # Methods
@@ -47,12 +47,19 @@ cultivation is categorical
 
 
 
+
+
 ### Numerical Descriptive Results
 
-<!--Numerical results go here. Use the numerical results to describe the patterns if any that exi[
-[-p
-[[
-]\-\-\]---st in the data as focused toward the research question!-->
+<!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
+
+```{r}
+boxplot(VitC~Cult,data=veggy)
+```
+
+```{r}
+favstats(VitC~Cult,data=veggy)
+```
 
 ## Inferential Results
 
